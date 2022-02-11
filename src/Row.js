@@ -56,12 +56,8 @@ function Row({ title, fetchUrl, isLargeRow}) {
             {movies.map(movie => (
                 <img 
                 key={movie.id}
-<<<<<<< HEAD
-               className={`row__poster ${isLargeRow && "row__posterLarge"}`}
-=======
                 onClick={()=>handleClick(movie)}
                 className={`row__poster ${isLargeRow} && "row__posterLarge"}`}
->>>>>>> 3422ce6 (basic final commit)
                 src={`${base_url}${
                     isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}
